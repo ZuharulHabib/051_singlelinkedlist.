@@ -161,7 +161,7 @@ void revtraverse()
 		{
 			cout << currentNode->noMhs << " " << currentNode->name << endl;
 			currentNode = currentNode->prev; 
-		}
+		} 
 	}
 }
 
