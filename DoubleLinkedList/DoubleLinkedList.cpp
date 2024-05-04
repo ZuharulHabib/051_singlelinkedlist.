@@ -19,4 +19,4 @@ void addnode()
 	cout << "\nEnter the name of the student: ";
 	cin >> newNode->name;
 
-	
+	 
