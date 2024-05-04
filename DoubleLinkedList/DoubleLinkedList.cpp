@@ -163,5 +163,5 @@ void revtraverse()
 			currentNode = currentNode->prev; 
 		} 
 	}
-}
+} 
 
