@@ -2,7 +2,7 @@
 using namespace std;
 
 struct Node {
-	int noMhs;
+	int noMhs; 
 	string name;
 	Node* next;
 };
@@ -10,15 +10,15 @@ struct Node {
 Node* START = NULL;
 
 void addNode() {
-	int nim;
-	string nama;
+	int nim; 
+	string nama; 
 	Node* nodeBaru = new Node();
 	cout << "Masukan Nim : ";
-	cin >> nim;
-	cout << "Masukan Nama : ";
-	cin >> nama;
-	nodeBaru->noMhs = nim;
-	nodeBaru->name = nama;
+	cin >> nim; 
+	cout << "Masukan Nama : ";  
+	cin >> nama;  
+	nodeBaru->noMhs = nim;  
+	nodeBaru->name = nama;   
 
 	if (START == NULL || nim <= START->noMhs) {
 		if (START != NULL && nim == START->noMhs)
@@ -35,7 +35,7 @@ void addNode() {
 	Node* previous = START;
 	Node* current = START;
 
-	while ((current != NULL) && (nim >= current->noMhs))
+	while ((current != NULL) && (nim >= current->noMhs)) 
 	{
 		if (nim == current->noMhs)
 		{
@@ -184,6 +184,6 @@ int main() {
 		}
 		catch (exception e) {
 			cout << "terjadi kesalahan" << endl;
-		} 
+		}  
 	} while (pilihan != 5);
-}
+} 
