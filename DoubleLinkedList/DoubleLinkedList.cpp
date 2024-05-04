@@ -125,8 +125,24 @@ void deleteNode()
 	cout << "\x1b[32mRecord with roll number " << rollNo << " delete/x1b[0m" << endl;
 }
 
-bool listEmpty() 
+bool listEmpty()
 {
 	return (START == NULL);
+}
+
+void traverse()
+{
+	if (listEmpty())
+		cout << "\nList is empty" << endl;
+	else
+	{
+		cout << "\nRecords in ascending order of roll number are:" << endl;
+		Node* currentNode = START;
+		while (currentNode != NULL)
+		{
+			cout << currentNode->noMhs << " " << currentNode->name << endl;
+			currentNode = currentNode->next;
+		}
+	}
 }
 
